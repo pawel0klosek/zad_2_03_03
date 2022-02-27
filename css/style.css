@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+.container, .container2 {
+    height: 300px;
+    display: flex;
+    border:1px solid green;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container div, .container2 div {
+    margin: 1px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 {
+    margin-top: 20px;
+}
+
+.container2 div:nth-of-type(2) {
+    order: -1;
+}
+
+.container2 div:nth-of-type(4) {
+    align-self: flex-end;
+}
+
+.container2 div:nth-of-type(5) {
+    align-self: center;
+}
+
